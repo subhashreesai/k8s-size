@@ -9,9 +9,9 @@ spec:
     - name: stress-co
       image: progrium/stress
       ports: 
-      command: ["stress", "--vm", "2", "--vm-bytes", "125M"]
         - containerPort: 80    
           protocol: TCP
+      command: ["stress", "--vm", "2", "--vm-bytes", "125M"]    
       resources: 
         requests:
           cpu: 150m
